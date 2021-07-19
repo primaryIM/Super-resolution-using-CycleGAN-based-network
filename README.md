@@ -8,7 +8,7 @@ Internal structures of concrete specimens can be assessed by reconstructing thei
 
 ## Overview of attempted approaches to solving the problem
 
-The given micro-CT image dataset was unpaired, i.e. there is no direct correspondence between low-resolution (LR) image and its high-resolution (HR) counterpart. After the paper study, I decided to implement and improve either cycle-consistency image translation, reference-based, or artificial dataset generation-based SRNNs. At the moment I saw more potential for improving specifically cycle-consistency image translation SRNN. Therefore, I used vanilla CycleGAN to modify it a number of ways:
+The given micro-CT image dataset was unpaired, i.e. there is no direct correspondence between low-resolution (LR) image and its high-resolution (HR) counterpart. After the paper study, I decided to implement and improve either cycle-consistency image translation, reference-based, or artificial dataset generation-based SRNNs. At the moment I saw more potential for improving specifically cycle-consistency image translation SRNN. Therefore, I used vanilla CycleGAN to modify it in a number of ways:
 1) Changed generators (Enhanced deep super-resolution network (EDSR), Enhanced Super-Resolution Generative Adversarial Network)
 2) Changed discriminators from Markovian to Relativistic average
 3) Added multi-modality super-resolution loss function apart from adversarial loss, cycle consistency loss, and identity loss
