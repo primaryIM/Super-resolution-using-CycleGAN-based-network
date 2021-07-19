@@ -12,7 +12,7 @@ The given micro-CT image dataset was unpaired, i.e. there is no direct correspon
 1) Changed generators (Enhanced deep super-resolution network (EDSR), Enhanced Super-Resolution Generative Adversarial Network)
 2) Changed discriminators from Markovian to Relativistic average
 3) Added multi-modality super-resolution loss function apart from adversarial loss, cycle consistency loss and identity loss
-4) Minor changes like hyperparameter tuning/random sampling/added inference framework/etc.
+4) Minor changes like hyperparameter tuning/random sampling/added inference framework/subpixel convolution layers
 
 The presented build of the network uses EDSR as generators and Markovian discriminators.
 
